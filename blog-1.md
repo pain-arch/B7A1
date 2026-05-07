@@ -1,6 +1,6 @@
-# The Problem with **any**: Understanding Type Holes and the Power of **unknown**
+# The Problem with **any**: Understanding Type Holes and the Power of **unknown**, What is Type Narrowing?
 
-
+## any VS unknown
 Typescript's main focused goal is to cheack the type before we run the code. But there is a type named **any** in Typescript which actaully turn off that security. Here are some points why it cause's security issues:
 
 - With this **any** type we can assign any kind of variable. Like you can call a function, access a property like object.
@@ -14,7 +14,7 @@ On the other hand **unknown** is more safe than **any**. It can also assign any 
 - It makes sure that we don't accidentally perform an incorrect operation, which reduces runtime errors
 
 
-## What is 'Type Narrowing'?
+## Type Narrowing
 
 Type Narrowing is a process by which we can convert a board type (like 'unknown') into a specific type. Basically by using Type Narrowing method we can ensure that this type will work in the code in a specific type. We can do it using **typeof** checks in the code.
 
