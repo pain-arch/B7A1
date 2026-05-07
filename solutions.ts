@@ -78,3 +78,21 @@ class Student extends Person {
         return details;
     }
 };
+
+
+//Problem 7:
+const getIntersection = (fistArray: number[], secondArray: number[]): number[] => {
+  const output: number[] = [];
+
+for (let i = 0; i < fistArray.length; i++) {
+    
+    for (let j = 0; j < secondArray.length; j++) {
+      if (fistArray[i] === secondArray[j]) {
+        output.push(fistArray[i]);
+        break; 
+      }
+    }
+  }
+
+  return output;
+};
