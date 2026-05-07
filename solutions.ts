@@ -41,3 +41,15 @@ const checkType = (input: StringOrNumber): StringOrNumber => {
 const getProperty = <T, K extends keyof T>(object: T, key: K) => {
     return object[key];
 };
+
+
+//Problem 5:
+interface Book {
+    title: string;
+    author: string;
+    publishedYear: number;
+};
+
+const toggleReadStatus = (book: Book): object => {
+    return { ...book, isRead: true };
+};
