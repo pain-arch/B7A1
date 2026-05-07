@@ -10,3 +10,14 @@ const filterEvenNumbers = (numbers: number[]): number[] => {
     }
     return evenNumbers;
 };
+
+//Problem 2:
+const reverseString = (input: string): string => {
+    let reversedOutput: string = "";
+
+    for (let i = input.length - 1; i >= 0; i--) {
+        reversedOutput = reversedOutput + input[i];
+    }
+    return reversedOutput;
+
+};
