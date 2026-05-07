@@ -14,8 +14,6 @@ On the other hand **unknown** is more safe than **any**. It can also assign any 
 - It makes sure that we don't accidentally perform an incorrect operation, which reduces runtime errors
 
 
-So the Final thing is if we use **any** there is a scope that system can cause error or security issue, meanwhile if we use **unknown** and it ensures system that we dont know what is the type but will check it before we use.
-
 ## What is 'Type Narrowing'?
 
 Type Narrowing is a process by which we can convert a board type (like 'unknown') into a specific type. Basically by using Type Narrowing method we can ensure that this type will work in the code in a specific type. We can do it using **typeof** checks in the code.
@@ -36,3 +34,6 @@ function inputData(input: unknown) {
 }
 
 ```
+
+
+So the Final thing is if we use **any** there is a scope that system can cause error or security issue, meanwhile if we use **unknown** and it ensures system that we dont know what is the type but will check it before we use. And this examine of type using **typeof** method before using it is called **Type Narrowing**.
