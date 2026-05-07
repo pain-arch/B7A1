@@ -53,3 +53,32 @@ interface Book {
 const toggleReadStatus = (book: Book): object => {
     return { ...book, isRead: true };
 };
+
+
+//Problem 6:
+class Person {
+    name: string;
+    age: number;
+
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+};
+
+class Student extends Person {
+    grade: string;
+    constructor(name: string, age: number, grade: string) {
+        super(name, age);
+        this.grade = grade;
+    }
+
+    getDetails(): string {
+        let details = `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
+        return details;
+    }
+};
+
+const student = new Student("Alice", 20, "A");
+
+console.log(student.getDetails());
