@@ -35,3 +35,9 @@ const checkType = (input: StringOrNumber): StringOrNumber => {
         return "Your input wasn't a 'string' or 'number'."
     }
 };
+
+
+//Problem 4:
+const getProperty = <T, K extends keyof T>(object: T, key: K) => {
+    return object[key];
+};
